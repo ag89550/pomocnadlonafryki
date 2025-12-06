@@ -10,7 +10,7 @@
 
 /* GLOBALNE STYLE */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* Domyślna czcionka dla reszty strony */
     margin: 0;
     padding: 0;
     background-color: var(--background-light);
@@ -32,7 +32,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(1, 0, 0, 0.1);
 }
 
 header .logo {
@@ -65,7 +65,7 @@ header nav a:hover {
 
 /* SEKCJA HERO (STRONA GŁÓWNA) */
 .hero-section {
-    background: url('placeholder_afryka.jpg') no-repeat center center/cover; /* ZMIEŃ NA WŁASNE ZDJĘCIE! */
+    background: url('https://radioznin.fm/images/xmurzyn.jpg.pagespeed.ic.xkKFHLGW6r.jpg') no-repeat center center/cover; /* ZMIEŃ NA WŁASNE ZDJĘCIE! */
     height: 70vh;
     color: var(--white);
     display: flex;
