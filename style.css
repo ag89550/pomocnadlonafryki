@@ -1,0 +1,282 @@
+/* Zmienne CSS dla łatwiejszego zarządzania kolorami */
+:root {
+    --primary-color: #ff6600; /* Pomarańczowy/Akcent */
+    --secondary-color: #007bff; /* Niebieski/Informacyjny */
+    --text-color: #333;
+    --background-light: #f4f4ff;
+    --background-dark: #2c3e50;
+    --white: white;
+}
+
+/* GLOBALNE STYLE */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: color 0.3s;
+}
+
+/* NAGŁÓWEK I NAWIGACJA */
+header {
+    background-color: var(--background-dark);
+    color: var(--white);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+header nav a {
+    color: var(--white);
+    margin-left: 25px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+header nav a:hover {
+    color: var(--primary-color);
+}
+
+.cta-button-nav {
+    background-color: var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-left: 30px !important;
+    transition: background-color 0.3s;
+}
+
+.cta-button-nav:hover {
+    background-color: #e65c00;
+}
+
+/* SEKCJA HERO (STRONA GŁÓWNA) */
+.hero-section {
+    background: url('placeholder_afryka.jpg') no-repeat center center/cover; /* ZMIEŃ NA WŁASNE ZDJĘCIE! */
+    height: 70vh;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 2;
+}
+
+.hero-content {
+    z-index: 3;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.hero-content p {
+    font-size: 1.8em;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+/* PRZYCISKI WEZWANIA DO DZIAŁANIA (CTA) */
+.cta-button-primary, .cta-button-secondary {
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+.cta-button-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.cta-button-primary:hover {
+    background-color: #e65c00;
+    transform: translateY(-2px);
+}
+
+.cta-button-secondary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.cta-button-secondary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* SEKCJE OGÓLNE I PODSTRONY */
+.section-container {
+    padding: 50px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--white);
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.misja p {
+    text-align: center;
+    font-size: 1.2em;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.aktualne-projekty {
+    background-color: #fcf6ef;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2em;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.subsection-title {
+    font-size: 1.6em;
+    margin-top: 40px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.primary-color { color: var(--primary-color); }
+.secondary-color { color: var(--secondary-color); }
+
+/* KARTY PROJEKTÓW */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    flex: 1;
+    min-width: 280px;
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: var(--background-dark);
+    font-size: 1.4em;
+    margin-top: 0;
+}
+
+.progress-bar {
+    background-color: #ffdaaa;
+    color: var(--primary-color);
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.donation-card {
+    background-color: #e6f0ff; /* Lekki akcent dla kart darowizn */
+    color: var(--secondary-color);
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* ZARZĄDZANIE WIDOCZNOŚCIĄ PODSTRON (Obsługiwane przez script.js) */
+.page-content {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.active-page {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* STOPKA */
+footer {
+    background-color: var(--background-dark);
+    color: #bbb;
+    text-align: center;
+    padding: 30px 5%;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav {
+        margin-top: 15px;
+    }
+    header nav a {
+        margin: 0 10px;
+        display: inline-block;
+    }
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+    .hero-content p {
+        font-size: 1.2em;
+    }
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 100%;
+        min-width: unset;
+    }
+}

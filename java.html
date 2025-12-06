@@ -1,0 +1,24 @@
+/**
+ * Funkcja do wyświetlania konkretnej podstrony i ukrywania pozostałych.
+ * Zapewnia płynne działanie menu nawigacyjnego.
+ */
+function showPage(pageId) {
+    // Pobiera wszystkie sekcje oznaczone klasą 'page-content'
+    const pages = document.querySelectorAll('.page-content');
+    
+    // Iteruje i usuwa klasę 'active-page' ze wszystkich sekcji (ukrywa je)
+    pages.forEach(page => {
+        page.classList.remove('active-page');
+    });
+
+    // Pobiera sekcję o żądanym ID i dodaje klasę 'active-page' (wyświetla ją)
+    const activePage = document.getElementById(pageId);
+    if (activePage) {
+        activePage.classList.add('active-page');
+    }
+}
+
+// Upewnienie się, że po pełnym załadowaniu dokumentu wyświetlana jest strona główna ('home')
+document.addEventListener('DOMContentLoaded', () => {
+    showPage('home');
+});

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomocna Dłoń Afryki - Wolontariat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🌍 Pomocna Dłoń Afryki</div>
+        <nav>
+            <a href="#home" onclick="showPage('home')">START</a>
+            <a href="#about" onclick="showPage('about')">O NAS</a>
+            <a href="#help" onclick="showPage('help')">JAK POMÓC</a>
+            <a href="#projects" onclick="showPage('projects')">NASZE PROJEKTY</a>
+            <a href="#contact" class="cta-button-nav" onclick="showPage('help')">WESPRZYJ NAS</a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="home" class="page-content active-page">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1>BUDUJEMY LEPSZE JUTRO W SERCU AFRYKI</h1>
+                    <p>Edukacja · Zdrowie · Nadzieja</p>
+                    <a href="#help" class="cta-button-primary" onclick="showPage('help')">ZOSTAŃ WOLONTARIUSZEM</a>
+                </div>
+            </div>
+
+            <div class="section-container misja">
+                <h2>❤️ Nasza Misja</h2>
+                <p>Wierzymy, że każde dziecko zasługuje na szansę. Działamy, aby zapewnić dostęp do edukacji i podstawowej opieki zdrowotnej dla najmłodszych w najbardziej potrzebujących regionach Afryki. Twoja pomoc zmienia ich świat.</p>
+            </div>
+
+            <div class="section-container aktualne-projekty">
+                <h2 class="section-title">✨ Aktualne Potrzeby</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <h3>Zbiórka na Plecaki</h3>
+                        <p>Potrzebujemy 500 plecaków i przyborów szkolnych dla uczniów na nowy rok. Pomóż im zacząć naukę!</p>
+                        <div class="progress-bar">Postęp: 30%</div>
+                    </div>
+                    <div class="card">
+                        <h3>Opieka Medyczna</h3>
+                        <p>Wspieraj mobilne kliniki zdrowia, zapewniające podstawowe badania i leki w odległych wioskach.</p>
+                        <a href="#help" class="cta-button-secondary" onclick="showPage('help')">Dowiedz się więcej</a>
+                    </div>
+                    <div class="card">
+                        <h3>Zostań Wolontariuszem</h3>
+                        <p>Poszukujemy nauczycieli, lekarzy i osób do pracy administracyjnej. Wyrusz z nami!</p>
+                        <a href="#help" class="cta-button-primary" onclick="showPage('help')">Aplikuj</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="page-content">
+            <div class="section-container">
+                <h1>O NAS: Historia i Transparentność</h1>
+                <p><strong>Kim Jesteśmy?</strong> Nasza organizacja powstała w 2018 roku z inicjatywy grupy przyjaciół, którzy odbyli pierwszą misję w Kenii. Nasza wizja to świat, w którym ubóstwo nie jest barierą dla edukacji i zdrowia.</p>
+                
+                <h2 class="subsection-title">👤 Nasz Zespół</h2>
+                <p>Poznaj ludzi, którzy stoją za sukcesem naszych projektów. </p>
+
+                <h2 class="subsection-title">📊 Transparentność</h2>
+                <p>Zobowiązujemy się do pełnej transparentności. <strong>90% każdej wpłaty</strong> trafia bezpośrednio na projekty w Afryce. Pełne raporty finansowe są dostępne do wglądu. <a href="#">Pobierz Raport Roczny 2024</a>.</p>
+            </div>
+        </section>
+
+        <section id="help" class="page-content">
+            <div class="section-container">
+                <h1>🤝 Jak Możesz Pomóc</h1>
+                
+                <h2 class="subsection-title primary-color">1. Zostań Wolontariuszem</h2>
+                <p>Dołącz do naszego zespołu i poświęć swój czas i umiejętności.</p>
+                <ul>
+                    <li><strong>Wymagania:</strong> Płynny angielski/francuski, min. 2 tygodnie dostępności.</li>
+                    <li><strong>Proces:</strong> Formularz online → Rozmowa kwalifikacyjna → Szkolenie.</li>
+                </ul>
+                <a href="#" class="cta-button-primary">WYPEŁNIJ FORMULARZ ZGŁOSZENIOWY</a>
+
+                <h2 class="subsection-title secondary-color">2. Wpłać Darowiznę</h2>
+                <p>Każda kwota ma znaczenie. Wybierz cel, który chcesz wesprzeć:</p>
+                <div class="cards-container">
+                    <div class="card donation-card">50 PLN - Posiłek na tydzień</div>
+                    <div class="card donation-card">100 PLN - Podręczniki szkolne</div>
+                    <div class="card donation-card">250 PLN - Wizyta lekarska</div>
+                </div>
+                <a href="#" class="cta-button-secondary">WESPRZYJ DZIECI</a>
+
+                <h2 class="subsection-title">3. Inne Formy Wsparcia</h2>
+                <p>Organizuj zbiórki w swojej społeczności, przekaż dary rzeczowe lub nawiąż współpracę biznesową (CSR).</p>
+            </div>
+        </section>
+
+        <section id="projects" class="page-content">
+            <div class="section-container">
+                <h1>🗺️ Nasze Projekty: Sukcesy i Plany</h1>
+                
+                <h2 class="subsection-title primary-color">1. Projekty Zakończone</h2>
+                <p><strong>Budowa Szkoły "Hope" (Kenia, 2023):</strong> Zapewniliśmy edukację dla 150 dzieci. </p>
+                <p><strong>Program Wody Pitnej (Uganda, 2024):</strong> Wybudowano 3 studnie, zapewniając dostęp do czystej wody 800 osobom.</p>
+
+                <h2 class="subsection-title secondary-color">2. Aktualne Potrzeby</h2>
+                <p>Obecnie koncentrujemy się na programie żywieniowym w Sudanie Południowym oraz rozbudowie naszej mobilnej kliniki.</p>
+                <p><strong>Lokalizacje:</strong> </p>
+            </div>
+        </section>
+        
+        <section id="contact" class="page-content">
+            <div class="section-container">
+                <h1>KONTAKT / WESPRZYJ NAS</h1>
+                <p>Dziękujemy za zainteresowanie! Wszystkie formy wsparcia znajdziesz w sekcji:</p>
+                <a href="#help" class="cta-button-primary" onclick="showPage('help')">Przejdź do "Jak Pomóc"</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pomocna Dłoń Afryki. Wszystkie prawa zastrzeżone.</p>
+        <p>Kontakt: info@pomocnadlon.org | Śledź nas na: Facebook, Instagram</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
